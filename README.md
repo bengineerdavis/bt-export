@@ -1,6 +1,9 @@
 # braintrust-dev-project-export
 
-This is a Python script to conveniently download all experiments and datasets in a project into a local directory as CSVs.
+This is a Python script to conveniently download all experiments and datasets in a
+project into a local directory as CSVs.
+
+We'll use this example project, [text2sql-test-project](https://www.braintrust.dev/app/ben-test-org/p/text2sql-test-project/experiments?ye=metric|duration,metric|llm_duration,metric|prompt_tokens,metric|completion_tokens,metric|total_tokens), to demonstrate the script.
 
 ## Usage
 
