@@ -3,12 +3,12 @@
 
 SCRIPT := sawmill
 PYTHON := $$(pyenv which python)
-PY_VERSION := 3.12.1
+PY_VERSION := 3.11
 VENV_NAME := sawmill-dev
 
 INSTALL_DIR := ../
 
-define PRINT_HELP_PYSCRIPT
+define PRINT_HELP_PYSCRIPTpyen
 import re, sys
 
 for line in sys.stdin:
