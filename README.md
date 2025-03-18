@@ -7,6 +7,8 @@ We'll use this example project, [text2sql-test-project](https://www.braintrust.d
 
 ## Usage
 
+_First make sure to complete [Requirements](#requirements) & [Installation](#installation) steps._
+
 ```bash
 # Show available commands
 bt-import --help
@@ -23,7 +25,14 @@ bt-import list-projects
 
 ## Installation
 
-### Requirements
+1. Complete [Requirements](#requirements)
+2. Run `make install`
+
+## Requirements
+
+* Have pyenv installed on your machine's local user environment
+* Have pre-commit installed on your machine's local user environment
+* Clone <https://github.com/salesforce/WikiSQL> to a sister repo on the user's local machine
 
 ## Assignment
 
@@ -45,4 +54,6 @@ inspired this script, here are some references:
 
 * <https://www.braintrust.dev/docs/start/eval-sdk>
 * <https://www.braintrust.dev/docs/reference/libs/python>
-*
+* <https://pypi.org/project/braintrust/>
+* <https://ipywidgets.readthedocs.io/en/stable/user_install.html>
+* <https://stackoverflow.com/questions/60971502/python-poetry-how-to-install-optional-dependencies>

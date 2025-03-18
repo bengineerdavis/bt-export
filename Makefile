@@ -4,7 +4,7 @@
 SCRIPT := sawmill
 PYTHON := $$(pyenv which python)
 PY_VERSION := 3.11
-VENV_NAME := sawmill-dev
+VENV_NAME := bt-export-dev
 
 INSTALL_DIR := ../
 
@@ -80,10 +80,10 @@ venv:  ## create a fresh, dedicated venv for the T3RAP local repo and t3report a
 
 install: clean venv  ## fresh developer installation of the t3reports app and Python dependencies
 	@echo "installing Python dependencies with poetry"
-	poetry install
+	poetry install --extras dev
 
-	@echo "installing Node.js dependencies for Mermaid.js markdown diagrams with pnpm"
-	pnpm install
+	# @echo "installing Node.js dependencies for Mermaid.js markdown diagrams with pnpm"
+	# pnpm install
 
 	@echo "installing pre-commit hooks"
 	pre-commit install
