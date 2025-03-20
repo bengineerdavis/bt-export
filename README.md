@@ -14,10 +14,7 @@ _First make sure to complete [Requirements](#requirements) & [Installation](#ins
 bt-import --help
 
 # Download all experiments and datasets
-bt-import download
-
-# Download from a specific project
-bt-import download --project PROJECT_ID
+bt-export download PROJECT-ID --output <OUTPUT-DIR>
 
 # List all available projects
 bt-import list-projects
@@ -25,13 +22,27 @@ bt-import list-projects
 
 ## Installation
 
+_The following installation method will allow the user to run the script as a CLI tool
+from anywhere in their userspace within their local operating system_
+
+```bash
+pipx install git+https://github.com/bengineerdavis/bt-import.git
+```
+
+### Development
+
+Use this alternative method, should you wish to update this script:
+
 1. Complete [Requirements](#requirements)
 2. Run `make install`
 
 ## Requirements
 
+* Generate and add to the user's local machine user environment the Braintrust API
+  (`BRAINTRUST_API_KEY`) token. See [usage](https://github.com/braintrustdata/braintrust-api-py?tab=readme-ov-file#usage)
 * Have pyenv installed on your machine's local user environment
 * Have pre-commit installed on your machine's local user environment
+* ALso have pipx installed
 * Clone <https://github.com/salesforce/WikiSQL> to a sister repo on the user's local machine
 
 ## Assignment
