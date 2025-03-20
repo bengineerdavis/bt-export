@@ -57,3 +57,4 @@ inspired this script, here are some references:
 * <https://pypi.org/project/braintrust/>
 * <https://ipywidgets.readthedocs.io/en/stable/user_install.html>
 * <https://stackoverflow.com/questions/60971502/python-poetry-how-to-install-optional-dependencies>
+* <https://platform.openai.com/api-keys>
